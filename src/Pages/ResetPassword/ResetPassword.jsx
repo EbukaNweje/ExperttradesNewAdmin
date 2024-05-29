@@ -13,7 +13,7 @@ const ResetPassword = () => {
 const ResetPassword = async (event) => {
     event.preventDefault();
   
-    const data = {password,confirmpassword}
+    const data = {password}
   
     console.log(data);
 
