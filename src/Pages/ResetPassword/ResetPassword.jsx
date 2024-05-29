@@ -20,7 +20,7 @@ const ResetPassword = async (event) => {
 
     const Url = `https://experttrades-new-back-end.vercel.app/api/resetPassword/${id}/${token}`
     
-    axios.post(Url, {data})
+    axios.post(Url, data)
     .then(response=> response.json())
       .then(response => {
         console.log(response) 
