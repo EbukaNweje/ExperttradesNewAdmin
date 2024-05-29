@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./ResetPasswordStyle.css"
 import { useParams } from 'react-router'
+import axios from "axios";
 
 const ResetPassword = () => {
   const [password, setPassword] = useState()
@@ -18,10 +19,8 @@ const ResetPassword = async (event) => {
 
 
     const Url = `https://experttrades-new-back-end.vercel.app/api/resetPassword/${id}/${token}`
-
-    fetch(Url, {data},{
-        method: "POST",
-    })
+    
+    axios.post(Url, {data})
     .then(response=> response.json())
       .then(response => {
         console.log(response) 
