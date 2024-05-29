@@ -7,7 +7,7 @@ const ResetPassword = () => {
   const [confirmpassword, setConfirmpassword] = useState()
   const {id, token} = useParams()
 
-console.log(password, confirmpassword)
+// console.log(password, confirmpassword)
 
 const ResetPassword = async (event) => {
     event.preventDefault();
