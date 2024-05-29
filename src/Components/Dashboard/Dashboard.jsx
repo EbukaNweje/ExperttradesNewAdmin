@@ -52,7 +52,7 @@ const Dashboard = () => {
         })
             .then((response) => response.json())
             .then((response) => {
-                //    console.log(response);
+                //    console.log(response);    
                 setUserdata(response?.data);
                 dispatch(swiftUserData(response.data));
                 localStorage.setItem("UserId", response?.data);
