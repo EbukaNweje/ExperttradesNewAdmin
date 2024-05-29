@@ -17,7 +17,7 @@ const ResetPassword = async (event) => {
     console.log(data);
 
 
-    const Url = `https://experttradesnewbackend.onrender.com/api/restLink/${id}/${token}`
+    const Url = `https://experttradesnewbackend.onrender.com/api/resetPassword/${id}/${token}`
 
     fetch(Url, {data},{
         method: "POST",
