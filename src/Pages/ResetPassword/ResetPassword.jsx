@@ -13,17 +13,16 @@ const ResetPassword = () => {
 const ResetPassword = async (event) => {
     event.preventDefault();
   
-    const data = {password}
+    const Data = {password}
   
-    console.log(data);
-
-
-    const Url = `https://experttrades-new-back-end.vercel.app/api/resetPassword/${id}/${token}`
+    console.log(Data);
+ 
+    const url = `https://experttrades-new-back-end.vercel.app/api/resetPassword/${id}/${token}`
     
-    axios.post(Url, data)
+    axios.post(url, Data)
       .then(response => {
         console.log(response) 
-        alert(response.message)
+        alert(response.data.message)
       })
       .catch((error) => {
         console.log(error.message);
