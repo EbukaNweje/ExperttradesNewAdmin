@@ -231,7 +231,7 @@ useEffect(()=>{
                             </div>
                         </div>
                     </div>
-                    <div className="DashHomeMainContentActiveDiv">
+                    {/* <div className="DashHomeMainContentActiveDiv">
                         <h3>
                             Active Plans(s){" "}
                             <span>
@@ -299,9 +299,8 @@ useEffect(()=>{
                                     </button>
                                 </>
                             )}
-                            {/* <button>Buy a plan</button> */}
                         </div>
-                    </div>
+                    </div> */}
                     <div className="DashHomeMainContenRecentTransactionDiv">
                         <h3>
                             Recent Transaction <span>({others?.length})</span>

@@ -75,13 +75,18 @@ useEffect(()=>{
     return (
         <>
             <div className="MyPlansBody">
-                <h1>My Investment plans (All)</h1>
+                <h1> My Investment plans (All)</h1>
 
                 <div className="MyPlansContent">
+                <h1
+                style={{
+                    color:"black"
+                }}
+                >My Investment plans</h1>
                     {/* <div className="MyPlansContentWrap">
                         <p>Your Investment plan is on. </p>
                     </div> */}
-                    <div className="MyPlansContentWrap">
+                    {/* <div className="MyPlansContentWrap">
                         {alluserplan?.length > 0 ? 
 
                             <>
@@ -144,7 +149,7 @@ useEffect(()=>{
                                     </button>
                                 </>)
                         }
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
